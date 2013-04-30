@@ -21,3 +21,5 @@ weeks/days in which:
  you were very (un)productive
  you spent more money than you wanted
  you met with someone or someone from a group of certain people
+ 
+ By default the trackings folder is empty and tracking files are created on firs use. If there are any file permission problems on your system simply create the aforementioned empty .txt files.
