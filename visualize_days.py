@@ -43,3 +43,5 @@ def plot_graph(x):
 
 if __name__ == '__main__':
 	plot_graph(get_weeks())
+
+	
