@@ -8,12 +8,17 @@ def get_weeks():
 	puts them into list
 	returns list
 	"""
+	year = raw_input('Which year do you want to visualize? ')
 	x_coords = []
-	f = open('weektracker.txt', 'r')
-	for i, line in enumerate(f):
-		# appends line to list (cutting '\n' at the end of each line)
-		x_coords.append(int(line[: -1]))
-
+	try:
+		f = open('tracking/weektracker'+year+'.txt', 'r')
+		for i, line in enumerate(f):
+			# appends line to list (cutting '\n' at the end of each line)
+			x_coords.append(int(line[: -1]))
+		
+	except (IOError):
+		print "Error reading file daytracker"+year+".txt"
+		
 	return x_coords
 
 def plot_graph(x):
@@ -42,4 +47,8 @@ def plot_graph(x):
 	plt.show()
 
 if __name__ == '__main__':
-	plot_graph(get_weeks())
+	entries = get_weeks()
+	if not entries:
+		print "No entries found for given year!"
+	else:
+		plot_graph(entries)

@@ -4,11 +4,16 @@ def get_weekdays():
 	puts them into list
 	returns list
 	"""
+	year = raw_input('Which year do you want to visualize? ')
 	x_coords = []
-	f = open('weekdaytracker.txt', 'r')
-	for i, line in enumerate(f):
-		# appends line to list (cutting '\n' at the end of each line)
-		x_coords.append(line[: -1])
+	try:
+		f = open('tracking/daytracker'+year+'.txt', 'r')
+		for i, line in enumerate(f):
+			# appends line to list (cutting '\n' at the end of each line)
+			x_coords.append(int(line[: -1]))
+		
+	except (IOError):
+		print "Error reading file daytracker"+year+".txt"
 
 	weekdays = {
 		'Monday': 0,

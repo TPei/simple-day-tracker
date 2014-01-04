@@ -29,7 +29,7 @@ def get_date():
 	return days.days
 
 def add_date(week):
-	with open('daytracker.txt', 'a') as myfile:
+	with open('tracking/daytracker.txt', 'a') as myfile:
 		myfile.write(str(week) + '\n')
 
 
