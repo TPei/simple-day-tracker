@@ -31,13 +31,13 @@ def get_date():
 			date = datetime.date(year, month, day)
 	
 	week = date.isocalendar()[1]
-	first = datetime.date(datetime.date.today().year, 01, 01)
+	first = datetime.date(date.year, 01, 01)
 	days = date - first
 
 	weekday = date.weekday()
 	weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
-	return week, days.days, weekdays[weekday]
+	return week, days.days, weekdays[weekday], date.year
 
 def add_week(week, year):
 	with open('tracking/weektracker'+year+'.txt', 'a') as myfile:
@@ -54,8 +54,7 @@ def add_weekday(weekday, year):
 
 
 if __name__ == '__main__':
-	week, day, weekday = get_date()
-	year = datetime.date.today().year
+	week, day, weekday, year = get_date()
 	add_week(week, str(year))
 	add_day(day, str(year))
 	add_weekday(weekday, str(year))
