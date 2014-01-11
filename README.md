@@ -2,6 +2,9 @@ simple-day-tracker
 ==================
 
 Add occurences to keep track of special dates. Visualize them using days in year, weeks in year or weekdays
+![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_days.png)
+![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_weeks.png)
+![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_weekdays.png)
 
 simply run the add_occurence.py program to add the week, day and weekday of an occurence
 whenever you want a graph created run the visualize_days.py, visualize_weeks.py visualize_weekdays.py file
@@ -24,6 +27,3 @@ weeks/days in which:
  
 By default the trackings folder is empty and tracking files are created on firs use. If there are any file permission problems on your system simply create the aforementioned empty .txt files.
 
-![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_days.png)
-![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_weeks.png)
-![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_weekdays.png)
