@@ -24,6 +24,6 @@ weeks/days in which:
  
 By default the trackings folder is empty and tracking files are created on firs use. If there are any file permission problems on your system simply create the aforementioned empty .txt files.
 
--![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_days.png)
--![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_weeks.png)
--![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_weekdays.png)
+![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_days.png)
+![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_weeks.png)
+![alt tag](https://raw.github.com/dragon5689/simple-day-tracker/master/visualize_weekdays.png)
